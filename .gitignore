@@ -1,0 +1,15 @@
+
+application/warehouse_app
+
+
+*.o
+*.ko
+*.mod
+*.mod.c
+*.cmd
+Module.symvers
+modules.order
+
+
+*.swp
+*~

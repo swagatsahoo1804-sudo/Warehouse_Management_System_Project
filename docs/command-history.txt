@@ -1,0 +1,163 @@
+    1  sudo apt install -y git
+    2  git --version
+    3  sudo dpkg --congifure --a
+    4  sudo dpkg --congfiure --a
+    5  sudo dpkg --configure --a
+    6  sudo apt--fix-broken install
+    7  sudo apt --fix-broken install
+    8  git configure --global user.name "swagatsahoo1804-sudo"
+    9  git config --global user.name "swagatsahoo1804-sudo"
+   10  git config --user.mail "swagat.sahoo1804@gmail.com"
+   11  git config --global init.defaultBranch Main
+   12  ls
+   13  cd downloads
+   14  cd Downloads
+   15  ls
+   16  cd..
+   17  cd ..
+   18  cd kernel_lab
+   19  git init
+   20  cat << 'EOF' > 'gitignore
+   21  #kernel build artifacts
+   22  *.ko
+   23  *.o
+   24  *.mod
+   25  *.mod.c
+   26  *.order
+   27  *.symvers
+   28  .tmp_versions/
+   29  .*.cmd
+   30  #c++binaries
+   31  kshiled_daemon
+   32  #vscodedir
+   33  ,vscode
+   34  EOF
+   35  git status
+   36  git add
+   37  git add .
+   38  git commit -m "Initial Commit: Kshield driver and daemon"
+   39  git config --global user.name "swagatsahoo1804-sudo"
+   40  git config --global user.email "swagat.sahoo1804@gmail.com"
+   41  git commit -m "Initial Commit: Kshield driver and daemon"
+   42  git -c user.name="swagatsahoo1804-sudo" -c user.email="swagat.sahoo1804@gmail.com" commit -m "Initial Commit: Kshield driver and daemon"
+   43  git status
+   44  git add .
+   45  pwd
+   46  echo "----"
+   47  ls -la
+   48  echo "---- GIT STATUS ----"
+   49  git status --short --ignored
+   50  echo "---- TRACKED FILES ----"
+   51  git ls-files
+   52  echo "---- GITIGNORE ----"
+   53  cat .gitignore 2>/dev/null || echo "No .gitignore"
+   54  find ~/Desktop -maxdepth 4 -type f | grep -i kshield
+   55  sudo apt update
+   56  sudo appt upgrade -y
+   57  sudo apt upgrade -y
+   58  sudo apt install build-essential git make gcc g++ gdb -y
+   59  sudo apt install linus-headers-$(uname -r) -y
+   60  uname -r
+   61  cat /etc/os-release
+   62  apt update
+   63  sudo apt update
+   64  sudo apt install linux-headers-generic -y
+   65  sudo apt install linux-generic -y
+   66  sudo reboot
+   67  uname -r
+   68  ls /lib/modules/$(uname -r)/build
+   69  cd ~
+   70  mkdir -p warehouse-management/{driver,application,data,tests,docs}
+   71  cd warehouse-management
+   72  cd ~
+   73  cd warehouse-management
+   74  sudo apt install tree -y
+   75  tree
+   76  cd ~/warehouse-management/driver
+   77  nano warehouse_driver.c
+   78  nano MakeFile
+   79  make
+   80  ls
+   81  pwd
+   82  ls -la
+   83  mv MakeFile Makefile
+   84  ls -la
+   85  make
+   86  ls
+   87  sudo insmod warehouse_driver.ko
+   88  lsmod | grep warehouse
+   89  ls -l /dev/warehouse
+   90  dmesg | tail -10
+   91  sudo dmesg | tail -10
+   92  sudo cat /dev/warehouse
+   93  echo "STOCK_IN P101 20" | sudo tee /dev/warehouse
+   94  dmesg | tail -5
+   95  sudo dmesg | tail -10
+   96  sudo dmesg | tail -5
+   97  ls -l /dev/warehouse
+   98  make 
+   99  cd ..
+  100  ls -la
+  101  cd application
+  102  ls -la
+  103  nano warehouse_app.cpp
+  104  g++ warehouse_app.cpp -o warehouse_app
+  105  ls -l
+  106  sudo ./warehouse_app
+  107  nano warehouse_app.cpp
+  108  g++ warehouse_app.cpp -o warehouse_app
+  109  ls -l
+  110  sudo ./warehouse_app
+  111  cd ~/warehouse-management/driver
+  112  cat warehouse_driver.c
+  113  ~/warehouse-management/driver
+  114  nano warehouse_driver.c
+  115  make
+  116  swagat@Ubuntu:~/warehouse-management/driver$ make
+  117  make -C /lib/modules/7.0.0-34-generic/build M=/home/swagat/warehouse-management/driver modules
+  118  make[1]: Entering directory '/usr/src/linux-headers-7.0.0-34-generic'
+  119  make[2]: Entering directory '/home/swagat/warehouse-management/driver'
+  120  warning: the compiler differs from the one used to build the kernel
+  121  warning: pahole version differs from the one used to build the kernel
+  122  warehouse_driver.c:101:1: error: expected identifier or ‘(’ before ‘/’ token
+  123  warehouse_driver.c:352:14: error: ‘warehouse_write’ undeclared here (not in a function); did you mean ‘warehouse_read’?
+  124  warehouse_driver.c:356:4: error: expected ‘;’ before ‘int’
+  125  warehouse_driver.c:356:16: warning: no previous prototype for ‘warehouse_init’ [-Wmissing-prototypes]
+  126  warehouse_driver.c:44:12: warning: ‘find_product’ defined but not used [-Wunused-function]
+  127  make[4]: *** [/usr/src/linux-headers-7.0.0-34-generic/scripts/Makefile.build:289: warehouse_driver.o] Error 1
+  128  make[3]: *** [/usr/src/linux-headers-7.0.0-34-generic/Makefile:2134: .] Error 2
+  129  make[2]: *** [/usr/src/linux-headers-7.0.0-34-generic/Makefile:248: __sub-make] Error 2
+  130  make[2]: Leaving directory '/home/swagat/warehouse-management/driver'
+  131  make[1]: *** [Makefile:248: __sub-make] Error 2
+  132  make[1]: Leaving directory '/usr/src/linux-headers-7.0.0-34-generic'
+  133  make: *** [Makefile:7: all] Error 2
+  134  nano warehouse_driver.c
+  135  make
+  136  ls -l warehouse_driver.ko
+  137  lsmod | grep warehouse
+  138  sudo rmmod warehouse_driver
+  139  lsmod | grep warehouse
+  140  sudo insmod warehouse_driver.ko
+  141  lsmod | grep warehouse
+  142  ls -l /dev/warehouse
+  143  sudo dmesg | tail -20
+  144  echo "STOCK_IN P101 10" | sudo tee /dev/warehouse
+  145  sudo cat /dev/warehouse
+  146  echo "STOCK_OUT P101 5" | sudo tee /dev/warehouse
+  147  sudo cat /dev/warehouse
+  148  echo "CHECK_STOCK P101" | sudo tee /dev/warehouse
+  149  sudo cat /dev/warehouse
+  150  echo "VIEW_INVENTORY" | sudo tee /dev/warehouse
+  151  sudo cat /dev/warehouse
+  152  echo "SEARCH_PRODUCT P104" | sudo tee /dev/warehouse
+  153  sudo cat /dev/warehouse
+  154  cd ~/warehouse-management/application
+  155  ls
+  156  nano warehouse_app.cpp
+  157  g++ warehouse_app.cpp -o warehouse_app
+  158  sudo ./warehouse_app
+  159  history
+  160  history > ~/warehouse-management/docs/command-history.txt
+  161  cat ~/warehouse-management/docs/command-history.txt
+  162  cd ~/warehouse-management
+  163  history > docs/command-history.txt
